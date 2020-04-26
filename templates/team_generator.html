@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Random Team Generator
+{% endblock %}
+
+
+{% block main %}
+
+<form name="TeamGenerator" onclick="countWords();" action="/team-generator" method="post">
+    <div class="form-group">
+        <h3>Enter a list of names seperated by a comma:</h3><br>
+        <textarea autocomplete="off" autofocus class="form-control" name="names" id="names" placeholder="Enter a list of names." rows="4" cols="30" type="text" style="width: 25rem; max-width: 100%;" required></textarea>
+    </div>
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="number" id="number" placeholder="Number of groups." type="number"min="0" style="height: 3rem; width: 20rem;" required>
+    </div>
+    <button class="btn btn-primary" type="submit" id="button" value="Randomize">Randomize!</button>
+</form>
+<script>
+// thanks to https://www.mediacollege.com/internet/javascript/text/count-words.html for the word counter code.
+function countWords()
+{
+	s = document.getElementById("names").value;
+    n = document.getElementById("number").value;
+	s = s.replace(/(^\s*)|(\s*$)/gi,"");
+	s = s.replace(/[ ]{2,}/gi," ");
+	s = s.replace(/\n /,"\n");
+	a = s.split(' ').length;
+    if (n > a)
+    {
+    	alert("The number of groups cannot be greater than the list of names");
+    	document.getElementById("button").addEventListener("click", function(event){
+  event.preventDefault()
+});
+		return false;
+	}
+	else {
+	    return true;
+	}
+}
+</script>
+{% endblock %}

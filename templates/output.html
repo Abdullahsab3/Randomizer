@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Random Team Generator
+{% endblock %}
+
+{% block main %}
+
+{% if request.path == "/team-generator" %}
+
+        <ul class="list-group">
+            {% for t in output %}
+                <li class="list-group-item d-flex justify-content-between align-items-center" id="list">{{t|join(', ')}}</li>
+            {% endfor %}
+        </ul>
+
+{% endif %}
+
+{% if request.path == "/name-picker" %}
+    <h3>The randomly picked name is{{output}}</h3>
+{% endif %}
+
+{% if request.path =="/name-generator" %}
+
+    <h3>The randomly generated name is {{n}}.</h3>
+
+{% endif %}
+<br><button class="btn btn-secondary" onclick="goBack()">Go back</button>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+{% endblock %}

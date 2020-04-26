@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Color Generator
+{% endblock %}
+{% block circle %}
+        <style>
+        .dot {
+          height: 150px;
+          width: 150px;
+          background-color: {{hex}};
+          border-radius: 50%;
+          display: inline-block;
+        }
+        </style>
+{% endblock %}
+{% block main %}
+<h3>Your randomly generated color is:</h3><br>
+<span class="dot" ></span><br>
+<p>{{hex}}</p><br>
+<button onClick="window.location.reload();" class="btn btn-secondary">Get a new random color</button>
+
+{% endblock %}
