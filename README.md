@@ -1,6 +1,5 @@
 # Randomizer
-Randomizer is a website  that makes generating random thigns easier.
-This website was originally made as the final project for the CS50 course. 
+Randomizer is a website that makes generating random thigns easier. It's
 <h1>How to use</h1>
 The website has multiple funcionalities:
 <h2>Random Team Generator</h2>
@@ -11,7 +10,7 @@ The Random Name Picker picks a randomly selected name out of the provided list o
 The Random Name Generator picks a random name from the database. The database includes three tables which they respectively are: males, females, names.
 The males table contains 2940 names. The females table containes 4987 names and the names table, which is the biggest one, containes 160k names.
 <h2>Color Generator</h2>
-The Random Color Generator generates a randomly selected hex color code. If you are out of inspirations, Randomizer can inspire you ;-) .
+The Random Color Generator generates a randomly selected hex color code. If you are out of inspirations, Randomizer can inspire you ;-).
 
 <h2>Sources:</h2>
     <div style="list-style-type:none; max-width: 100%;">
