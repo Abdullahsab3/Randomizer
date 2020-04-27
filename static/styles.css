@@ -1,11 +1,11 @@
 body {
-      counter-reset: section;
+      counter-reset: number;
 
 }
 
 #list::before {
-  counter-increment: section;
-  content: "Group " counter(section) ": ";
+  counter-increment: number;
+  content: "Group " counter(number) ": ";
 
 }
 nav .navbar-brand
@@ -54,4 +54,22 @@ main img
 {
     /* constrain images on small screens */
     max-width: 100%;
+}
+/* head text animation */
+.display-3 {
+    animation-name: head;
+    animation-duration: 1s;
+}
+@keyframes head {
+    0% {font-size: 45px;}
+    100% {font-size: 50px;}
+}
+
+.form-control {
+    background-color: #171717;
+    border: thin;
+}
+.form-control:focus {
+    background-color: #080808;
+    color: white;
 }
