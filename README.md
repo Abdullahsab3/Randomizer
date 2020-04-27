@@ -16,25 +16,25 @@ The Random Color Generator generates a randomly selected hex color code. If you 
 * [Dr. David J. Malan.](https://cs.harvard.edu/malan/)
         Professor of the Practice of Computer Science at Harvard University.
 * [Brian Yu and Doug Lloyd and the rest of CS50 team.](https://cs50.harvard.edu/x/2020/)
-    CS50 is an on-campus and online introductory course on computer science</small>
+    CS50 is an on-campus and online introductory course on computer science
 * [W3schools](https://www.w3schools.com/)
     Educational website for learning web technologies online.
 * [Stackoverflow and all its users.](https://stackoverflow.com/)
-    Stack Overflow is a question and answer site for professional and enthusiast programmers.</small>
-* (https://www.cmu.edu/)[Carnegie Mellon University]
+    Stack Overflow is a question and answer site for professional and enthusiast programmers.
+* [Carnegie Mellon University](https://www.cmu.edu/)
     for providing the [males](http://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/areas/nlp/corpora/names/male.txt)and [females](http://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/areas/nlp/corpora/names/female.txt) names database online for free.
-* (https://bootswatch.com/)[Bootswatch] for providing the bootstrap (https://bootswatch.com/darkly/) dark theme.
+* [Bootswatch](https://bootswatch.com/) for providing the bootstrap [dark theme](https://bootswatch.com/darkly/).
 * (https://getbootstrap.com/)[Bootstrap]
      Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development
-* (https://github.com/philipperemy)[Philipperemy]
-    for providing the (https://github.com/philipperemy/name-dataset/blob/master/names_dataset/first_names.all.txt)[giant names database.]
-* (https://medium.com/@ercanvural.bm)[Ercan Vural]
+* [Philipperemy](https://github.com/philipperemy)
+    for providing the )[giant names database.](https://github.com/philipperemy/name-dataset/blob/master/names_dataset/first_names.all.txt)
+* Ercan Vural]¸(https://medium.com/@ercanvural.bm)
     for providing some nice code.
-* [https://www.python.org/][Python team]
+* [Python team][https://www.python.org/]
     Python is an interpreted, high-level, general-purpose programming language.
-*  (https://github.com/mitsuhiko)[Armin Ronacher]
+*  [Armin Ronacher](https://github.com/mitsuhiko)
     The creator of Flask and Jinja.
-* (https://www.sqlite.org/index.html)[Sqlite3 team]
+* [Sqlite3 team](https://www.sqlite.org/index.html)
     SQLite is a relational database management system contained in a C library.
-* (https://github.com/)[Github team]
+* ([Github team]https://github.com/)
     GitHub, Inc. is a United States-based global company that provides hosting for software development version control using Git.
