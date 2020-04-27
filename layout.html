@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+      {% if request.path == "/" %}
+      <style>
+        .randomizer-logo {
+    animation-name: logo;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+@keyframes logo {
+    0% {opacity: 0; max-width: 95%;}
+    20% {opacity: 0.1; max-width: 95%;}
+    100% {opacity: 1; max-width: 100%;}
+}
+
+      </style>
+      {% endif %}
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- https://favicon.io/emoji-favicons/money-mouth-face/ -->
+        <link href="/static/favicon.ico" rel="icon">
+        <link href="/static/bootstrap.css" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <title>Randomizer: {% block title %}{% endblock %}</title>
+        {% if request.path == "/color-generator" %}
+        {% block circle %}
+        {% endblock %}
+        {% endif %}
+
+    </head>
+
+    <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <a class="navbar-brand" href="/"><img src="static/logo.png" class="randomizer-logo" alt="logo" width="250"  style="max-width: 100%; height: auto;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      {% if request.path == "/" %}
+      <li class="nav-item active">
+        {% else %}
+        <li class="nav-item">
+          {% endif %}
+
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      {% if request.path == "/team-generator" %}
+      <li class="nav-item active">
+        {% else %}
+          <li class="nav-item">
+        {% endif %}
+        <a class="nav-link" href="/team-generator">Team Generator</a>
+      </li>
+      {% if request.path == "/name-picker" %}
+      <li class="nav-item active">
+        {% else %}
+          <li class="nav-item">
+        {% endif %}
+        <a class="nav-link" href="/name-picker">Name Picker</a>
+      </li>
+      {% if request.path == "/name-generator" %}
+      <li class="nav-item active">
+        {% else %}
+          <li class="nav-item">
+        {% endif %}
+        <a class="nav-link" href="/name-generator">Name Generator</a>
+      </li>
+      {% if request.path == "/color-generator" %}
+      <li class="nav-item active">
+        {% else %}
+          <li class="nav-item">
+        {% endif %}
+        <a class="nav-link" href="/color-generator">Color Generator</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto mt-2">
+      {% if request.path == "/about" %}
+      <li class="nav-item active">
+        {% else %}
+        <li class="nav-item">
+          {% endif %}
+        <a class="nav-link" href="/about">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+        {% if get_flashed_messages() %}
+            <header>
+                <div class="alert alert-primary border text-center"  role="alert">
+                    {{ get_flashed_messages() | join(" ") }}
+                </div>
+            </header>
+        {% endif %}
+
+        <main class="container p-5">
+            {% block main %}{% endblock %}
+        </main>
+
+        <footer class="small text-center text-muted" style="padding: 0.5rem;">
+            Made with ❤️ by Abdullah Saba Allil. View <a href="https://github.com/Abdullahsab3/randomizer" target="blank_">github.</a><br>
+            Having a problem? <a href="mailto:randomizer-issues@hotmail.com">Contact us.</a>
+        </footer>
+
+    </body>
+
+</html>

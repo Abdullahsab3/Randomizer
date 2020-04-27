@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Random Name Generator
+{% endblock %}
+
+{% block main %}
+
+<form action="/name-generator" method="post">
+    <div class="form-group">
+        <fieldset style="float: center; text-align: center;">
+          <legend>Choose the preferred gender:</legend>
+          <div class="form-group">
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio1" name="customRadio" value="male" class="custom-control-input" checked="" >
+              <label class="custom-control-label" for="customRadio1">Male</label><br><small class="text-muted">Database with 2940 names.</small>
+            </div><br>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio2" name="customRadio" value="female" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio2">Female</label><br><small class="text-muted">Database with 4987 names.</small>
+            </div><br>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio3" name="customRadio" value="nospec" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio3" checked="">I couldn't care less!</label><br><small class="text-muted">Much bigger database (140k words).</small>
+            </div>
+          </div>
+        </fieldset>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit" style="float: center;">Randomize!</button>
+</form>
+{% endblock %}
