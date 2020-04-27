@@ -30,7 +30,7 @@ The Random Color Generator generates a randomly selected hex color code. If you 
     for providing the [giant names database.](https://github.com/philipperemy/name-dataset/blob/master/names_dataset/first_names.all.txt)
 * [Ercan Vural](https://medium.com/@ercanvural.bm)
     for providing some nice code.
-* [Python team][https://www.python.org/]
+* [Python team](https://www.python.org/)
     Python is an interpreted, high-level, general-purpose programming language.
 *  [Armin Ronacher](https://github.com/mitsuhiko)
     The creator of Flask and Jinja.
