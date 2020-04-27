@@ -15,7 +15,7 @@ The Random Color Generator generates a randomly selected hex color code. If you 
 # Sources:
 * [Dr. David J. Malan.](https://cs.harvard.edu/malan/)
 
-        Professor of the Practice of Computer Science at Harvard University.
+Professor of the Practice of Computer Science at Harvard University.
 * [Brian Yu and Doug Lloyd and the rest of CS50 team.](https://cs50.harvard.edu/x/2020/)
     CS50 is an on-campus and online introductory course on computer science
 * [W3schools](https://www.w3schools.com/)
