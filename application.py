@@ -40,6 +40,7 @@ def name_picker():
         session["output"] = []
     # return the page if users requests it.
     if request.method == "GET":
+        session.clear()
         return render_template("name_picker.html")
     # get information from user.
     if request.method == "POST":
@@ -72,7 +73,7 @@ def team_generator():
         number_of_teams = int(request.form.get("number"))
         # error checking
         if number_of_teams <= 0:
-            return apology("Must provide a positive number", 400)
+            return apology("You Must provide a positive number", 400)
         # pick random teams.
         while number_people > 0 and number_of_teams > 0:
             teams = random.sample(session["people"], int(number_people/number_of_teams))
