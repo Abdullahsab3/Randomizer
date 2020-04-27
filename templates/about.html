@@ -4,10 +4,13 @@
     About
 {% endblock %}
 {% block main %}
-<h3>About this Website</h3>
+
+<div class="list-group">
+<h3>About this Website</h3><br>
 <p>This website was made as the final project for the CS50 course. This website is free to use by anyone.</p><br>
-<p>I would like to thank everyone who made this website possible:</p>
-<ul style="list-style-type:none;">
+
+    <p>I would like to thank everyone who made this website possible:</p>
+    <div style="list-style-type:none; max-width: 100%;">
     <a href="https://cs.harvard.edu/malan/" target="blank_" style="color: white;text-decoration: none;"><li>Dr. David J. Malan.</li></a> <small class="text-muted">Professor of the Practice of Computer Science at Harvard University.</small>
     <a href="https://cs50.harvard.edu/x/2020/" target="blank_" style="color: white;text-decoration: none;"><li>Brian Yu and Doug Lloyd and the rest of CS50 team.</li></a><small class="text-muted">CS50 is an on-campus and online introductory course on computer science</small>
     <a href="https://www.w3schools.com/" target ="blank_" style="color: white;text-decoration: none;"><li>W3schools</li></a><small class="text-muted">Educational website for learning web technologies online.</small>
@@ -21,6 +24,6 @@
     <a href="https://www.python.org/" target="blank_" style="color: white;text-decoration: none;"><li>Python team</li></a><small class="text-muted">Python is an interpreted, high-level, general-purpose programming language.</small>
     <a href="https://github.com/mitsuhiko" targrt="blank_" style="color: white;text-decoration: none;"><li>Armin Ronacher</li></a><small class="text-muted">The creator of Flask and Jinja.</small>
     <a href="https://www.sqlite.org/index.html" target="blank_" style="color: white;text-decoration: none;"><li>Sqlite3 team</li></a><small class="text-muted">SQLite is a relational database management system contained in a C library.</small>
-    <a href"https://github.com/" target="blank_" style="color: white;text-decoration: none;"><li>Github team</li></a><small classs="text-muted">GitHub, Inc. is a United States-based global company that provides hosting for software development version control using Git.</small>
-</ul>
+    <a href="https://github.com/" target="blank_" style="color: white;text-decoration: none;"><li>Github team</li></a><small class="text-muted">GitHub, Inc. is a United States-based global company that provides hosting for software development version control using Git.</small>
+    </div>
 {% endblock %}

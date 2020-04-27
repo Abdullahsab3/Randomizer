@@ -3,7 +3,21 @@
 <html lang="en">
 
     <head>
+      {% if request.path == "/" %}
+      <style>
+        .randomizer-logo {
+    animation-name: logo;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+@keyframes logo {
+    0% {opacity: 0; max-width: 95%;}
+    20% {opacity: 0.1; max-width: 95%;}
+    100% {opacity: 1; max-width: 100%;}
+}
 
+      </style>
+      {% endif %}
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +44,8 @@
 
     <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/"><img src="static/logo.png" alt"logo" width="250"  style="max-width: 100%; height; auto;"></a>
+
+  <a class="navbar-brand" href="/"><img src="static/logo.png" class="randomizer-logo" alt="logo" width="250"  style="max-width: 100%; height: auto;"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -97,8 +112,8 @@
             {% block main %}{% endblock %}
         </main>
 
-        <footer class="small text-center text-muted">
-            Made with ❤️by Abdullah Saba Allil. View <a href="#">github.</a><br>
+        <footer class="small text-center text-muted" style="padding: 0.5rem;">
+            Made with ❤️ by Abdullah Saba Allil. View <a href="https://github.com/Abdullahsab3/randomizer" target="blank_">github.</a><br>
             Having a problem? <a href="mailto:randomizer-issues@hotmail.com">Contact us.</a>
         </footer>
 
