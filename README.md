@@ -1,16 +1,34 @@
 # Randomizer
-Randomizer is a website that makes generating random thigns easier. It's
+Randomizer is a website that makes generating random thigns easier. It is built with responsive design in mind so it works on any device.
+
+# Features
+* Basic CSS logo and header animation in the front page.
+* Modern dark mode, easier on the eyes than the old school theme.
+* Multiple funcionalities.
+
 # How to use
 The website has multiple funcionalities:
 ## Random Team Generator
-With the Random team generator you can generator random teams out of a list of names you provide. This can be helpful for teachers who want to split their class into differen teams.
+With the Random team generator you can generator random teams out of a list of names you provide. This can be helpful for teachers who want to split their class into different teams.
+### How does it work
+The way it works is that you first type in a list of name of your choice, separated by a comma. Then you provide the number of groups you want and click the Randomize button. Finally you will get the results.
+### Real time error checking
+If The given number of group is bigger than the length of the names list, the website will display an alert saying "The number of groups can't be greater than the length of the list of the provided names" to prompt the user for correct input. If the user didn't fill out one of the fields or both of the them, the website will prompt him for input
 ## Random Name Picker
 The Random Name Picker picks a randomly selected name out of the provided list of names.
-## Random Name Generator<
+### How does it worke
+Just like the team generator you provide a list of names of your choice, separated by a comma and you press the randomize button to get the results.
+### Real time rrror checking
+If the user didn't cooperate and didn't fill out the text field, the website will prompt him for input.
+## Random Name Generator
 The Random Name Generator picks a random name from the database. The database includes three tables which they respectively are: males, females, names.
 The males table contains 2940 names. The females table containes 4987 names and the names table, which is the biggest one, containes 160k names.
+### How does it work
+You select the preferred gender whether it is male, female, or not specified and you press the Randomize button to get the result.
 ## Random Color Generator
-The Random Color Generator generates a randomly selected hex color code. If you are out of inspirations, Randomizer can inspire you ;-).
+The Random Color Generator generates a randomly selected hex color code. If you are out of inspirations, Randomizer can inspire you by giving you a totally random color ;-).
+### How does it work
+You press the 'Get a new color' button in order to get a new random color.
 
 # Sources:
 * [Dr. David J. Malan.](https://cs.harvard.edu/malan/)
