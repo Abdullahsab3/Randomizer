@@ -68,6 +68,7 @@ main img
 .form-control {
     background-color: #171717;
     border: thin;
+    color: white;
 }
 .form-control:focus {
     background-color: #080808;
